@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Hosts a local website that shows thumbnails and plays archived videos, as if it was youtube",
   "main": "server.js",
-  "author": "Poogen",
+  "author": "Gazyn",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
