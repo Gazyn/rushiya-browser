@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181818;
+}
+
+::-webkit-scrollbar {
+    background: #181818;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #737373;
+    border-radius: 10px;
+    border: 5px solid #181818;  /* creates padding around scroll thumb */
+}
+
+#vid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail-div {
+    width: calc(25% - 16px);
+    height: 25vh;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: calc(40px + 5rem);
+}
+
+.thumb-img-container {
+    position: relative;
+}
+
+.thumbnail-image {
+    object-fit: contain;
+    width: 100%;
+    cursor: pointer;
+}
+
+.duration-text-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.4em;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 4em;
+    height: 1em;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+}
+
+.duration-text {
+    font-family: "Roboto","Arial",sans-serif;
+    color: #fff;
+    cursor: default;
+}
+
+.title-text {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 800;
+    max-height: 6rem;
+    color: #fff;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: normal;
+    cursor: default;
+}
+
+.title-text:hover {
+    overflow: visible;
+}
+
+.clicked {
+    opacity: 0.5;
+}
